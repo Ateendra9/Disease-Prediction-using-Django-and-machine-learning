@@ -13,3 +13,6 @@ To simplify the onboarding process and eliminate the manual setup steps for Post
 ### Log Entry: 2026-06-05
 Automated check-in.
 
+### Log Entry: 2026-06-06
+To simplify the onboarding process and eliminate manual database configuration steps like creating the 'predico' database in pgAdmin, we plan to containerize the entire application using Docker and Docker Compose. This update will bundle the Django web app and a PostgreSQL database service into a unified, multi-container setup, allowing developers to spin up the entire disease prediction platform, run migrations, and start the local server with a single command.
+
