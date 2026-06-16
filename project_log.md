@@ -43,3 +43,6 @@ To streamline the setup process for new developers and prevent manual database c
 ### Log Entry: 2026-06-15
 Automated check-in.
 
+### Log Entry: 2026-06-16
+To streamline the initial setup process for new developers, we should automate the creation of the PostgreSQL database instead of relying on manual configuration via PgAdmin. Implementing a custom Django management command or a setup script that checks for the existence of the 'predico' database and automatically provisions it would significantly reduce friction. Additionally, we could integrate basic seed data for symptoms and disease mappings during this initialization phase, ensuring a seamless 'out-of-the-box' experience upon running the migration commands.
+
