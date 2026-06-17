@@ -46,3 +46,6 @@ Automated check-in.
 ### Log Entry: 2026-06-16
 To streamline the initial setup process for new developers, we should automate the creation of the PostgreSQL database instead of relying on manual configuration via PgAdmin. Implementing a custom Django management command or a setup script that checks for the existence of the 'predico' database and automatically provisions it would significantly reduce friction. Additionally, we could integrate basic seed data for symptoms and disease mappings during this initialization phase, ensuring a seamless 'out-of-the-box' experience upon running the migration commands.
 
+### Log Entry: 2026-06-17
+To improve the onboarding experience and eliminate the friction of manual database configuration, we are planning to containerize the Django application and its PostgreSQL database using Docker and Docker Compose. This update will define a multi-container setup that automatically provisions the 'predico' database instance and configures the necessary environment variables. By transitioning to a Dockerized environment, developers can spin up the disease prediction system and its dependencies with a single command, streamlining both local development and future deployment workflows.
+
