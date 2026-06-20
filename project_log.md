@@ -55,3 +55,6 @@ Automated check-in.
 ### Log Entry: 2026-06-19
 Automated check-in.
 
+### Log Entry: 2026-06-20
+To streamline the initial onboarding experience for developers, we are planning to automate the PostgreSQL database creation process. Currently, users must manually set up the 'predico' database using pgAdmin before running migrations. By introducing a database initialization script, we can programmatically check for the database's existence and create it if missing, significantly reducing manual setup friction and ensuring a smoother local installation pipeline.
+
