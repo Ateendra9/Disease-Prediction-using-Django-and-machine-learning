@@ -61,3 +61,6 @@ To streamline the initial onboarding experience for developers, we are planning 
 ### Log Entry: 2026-06-21
 To simplify the local development setup and improve security, we updated the Django database configuration to pull PostgreSQL credentials from environment variables. Additionally, we implemented an automatic SQLite fallback for developers who want to run the application immediately without manually setting up a PostgreSQL instance first, streamlining the onboarding process detailed in our documentation.
 
+### Log Entry: 2026-06-22
+To streamline the setup process for new developers and simplify local environment configuration, we should containerize the Django web application and its PostgreSQL database using Docker and Docker Compose. Currently, developers must manually install PostgreSQL, use PgAdmin to create a database named 'predico', and then run migrations. Introducing a Docker Compose setup would automate the database provisioning, environment variable injection, and dependency installation, allowing the entire system to run seamlessly with a single command.
+
