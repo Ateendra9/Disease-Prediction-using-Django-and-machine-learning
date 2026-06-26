@@ -73,3 +73,6 @@ Automated check-in.
 ### Log Entry: 2026-06-25
 Automated check-in.
 
+### Log Entry: 2026-06-26
+To improve the developer onboarding experience and eliminate the manual PostgreSQL database setup via pgAdmin, we plan to containerize the Django application and the PostgreSQL database using Docker Compose. This will allow new contributors to spin up the entire application, including the machine learning prediction backend and database schema, with a single command.
+
