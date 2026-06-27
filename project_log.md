@@ -76,3 +76,6 @@ Automated check-in.
 ### Log Entry: 2026-06-26
 To improve the developer onboarding experience and eliminate the manual PostgreSQL database setup via pgAdmin, we plan to containerize the Django application and the PostgreSQL database using Docker Compose. This will allow new contributors to spin up the entire application, including the machine learning prediction backend and database schema, with a single command.
 
+### Log Entry: 2026-06-27
+Reflecting on the setup process outlined in the README, requiring users to manually create the 'predico' database in PostgreSQL can be a friction point for new contributors. To streamline local development, we plan to integrate a Docker Compose configuration to containerize both the Django application and the PostgreSQL database. This will automate database initialization and dependency installations, eliminating the need for manual PgAdmin intervention and ensuring a consistent environment across different systems.
+
