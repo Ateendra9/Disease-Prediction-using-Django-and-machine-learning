@@ -85,3 +85,6 @@ Automated check-in.
 ### Log Entry: 2026-06-29
 Automated check-in.
 
+### Log Entry: 2026-06-30
+To simplify the local environment setup process and eliminate the need for manual PostgreSQL and pgAdmin installation on host machines, we propose containerizing the application using Docker and Docker Compose. This update will package the Django web application and configure a PostgreSQL service that automatically creates the required 'predico' database, managing all Python dependencies inside a single container lifecycle and reducing onboarding friction for new contributors.
+
