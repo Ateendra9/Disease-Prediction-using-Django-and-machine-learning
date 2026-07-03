@@ -94,3 +94,6 @@ To improve the developer onboarding experience and eliminate manual database con
 ### Log Entry: 2026-07-02
 To streamline the initial setup process for new developers and users, we are planning to introduce Docker containerization to the repository. Currently, the setup requires manual installation of PostgreSQL and pgAdmin, followed by manually creating a database named 'predico'. By creating a Dockerfile and a docker-compose.yml file, we can bundle the Django web application, a PostgreSQL database container, and pgAdmin together. This will allow anyone to run the entire stack with a single command, significantly improving the overall onboarding experience and ensuring environment consistency across different systems.
 
+### Log Entry: 2026-07-03
+Today's focus was on enhancing the user experience of the Django web application by conceptualizing an autocomplete feature for symptom input. Since the machine learning model expects exact symptom names from the Kaggle dataset, manual input can easily lead to typos or unrecognized terms. Implementing a Django-based autocomplete API endpoint, backed by a frontend search UI, will guide patients to select correct symptoms dynamically, thereby reducing prediction errors and improving overall system usability.
+
