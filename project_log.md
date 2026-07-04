@@ -97,3 +97,6 @@ To streamline the initial setup process for new developers and users, we are pla
 ### Log Entry: 2026-07-03
 Today's focus was on enhancing the user experience of the Django web application by conceptualizing an autocomplete feature for symptom input. Since the machine learning model expects exact symptom names from the Kaggle dataset, manual input can easily lead to typos or unrecognized terms. Implementing a Django-based autocomplete API endpoint, backed by a frontend search UI, will guide patients to select correct symptoms dynamically, thereby reducing prediction errors and improving overall system usability.
 
+### Log Entry: 2026-07-04
+To streamline the onboarding process and improve local development, we plan to implement a fallback database configuration in settings.py that defaults to SQLite if PostgreSQL is not readily available. This will allow developers to quickly run migrations and test the Django-based machine learning prediction engine without the immediate overhead of installing pgAdmin and configuring the 'predico' database manually.
+
