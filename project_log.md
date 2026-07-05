@@ -100,3 +100,6 @@ Today's focus was on enhancing the user experience of the Django web application
 ### Log Entry: 2026-07-04
 To streamline the onboarding process and improve local development, we plan to implement a fallback database configuration in settings.py that defaults to SQLite if PostgreSQL is not readily available. This will allow developers to quickly run migrations and test the Django-based machine learning prediction engine without the immediate overhead of installing pgAdmin and configuring the 'predico' database manually.
 
+### Log Entry: 2026-07-05
+Investigated simplifying the initial setup process for new developers by implementing an automatic SQLite fallback when the PostgreSQL 'predico' database is unavailable. This will streamline local testing and continuous integration workflows, reducing onboarding friction. Additionally, we plan to modularize the symptom prediction logic into a dedicated service layer to decouple the Django views from the machine learning inference code, paving the way for easier model updates and unit testing.
+
