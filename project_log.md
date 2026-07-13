@@ -121,3 +121,6 @@ Automated check-in.
 ### Log Entry: 2026-07-12
 To improve the developer onboarding experience and ensure seamless deployment, we are planning to implement a custom Django management command to automate the database initialization and seed the initial symptom tables, eliminating the need for manual PostgreSQL setup beyond the basic instance creation. Additionally, we should look into optimizing the machine learning model inference pipeline by decoupling the prediction engine from the main web thread and caching the pre-trained Joblib model in memory upon Django startup.
 
+### Log Entry: 2026-07-13
+To improve the developer onboarding experience and eliminate the manual overhead of installing PostgreSQL and creating the 'predico' database via PgAdmin, we should introduce a Docker Compose configuration. This will package the Django application alongside a pre-configured PostgreSQL service container, automating the database initialization, dependency installation, and migration steps into a single, reproducible command.
+
