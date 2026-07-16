@@ -127,3 +127,6 @@ To improve the developer onboarding experience and eliminate the manual overhead
 ### Log Entry: 2026-07-14
 Automated check-in.
 
+### Log Entry: 2026-07-16
+Reflecting on the manual database setup instructions using PgAdmin, we should aim to streamline the onboarding experience for new developers. Introducing a Docker Compose configuration would automate the instantiation of the PostgreSQL database (named 'predico') and containerize the Django application alongside it. This eliminates the manual step of creating the DB instance and installing local dependencies, bringing us closer to a single-command setup environment while maintaining consistency between local development and potential production environments.
+
