@@ -130,3 +130,6 @@ Automated check-in.
 ### Log Entry: 2026-07-16
 Reflecting on the manual database setup instructions using PgAdmin, we should aim to streamline the onboarding experience for new developers. Introducing a Docker Compose configuration would automate the instantiation of the PostgreSQL database (named 'predico') and containerize the Django application alongside it. This eliminates the manual step of creating the DB instance and installing local dependencies, bringing us closer to a single-command setup environment while maintaining consistency between local development and potential production environments.
 
+### Log Entry: 2026-07-17
+Reflecting on the initial setup process, requiring manual PostgreSQL configuration can be a friction point for new developers trying to run the app locally. To streamline onboarding, I have implemented a fallback to a local SQLite database in the Django settings file if the PostgreSQL connection is not configured. I have also added a custom Django management command to automatically seed the database with the core symptom dataset from the Kaggle source, eliminating the need for manual data imports after running migrations.
+
