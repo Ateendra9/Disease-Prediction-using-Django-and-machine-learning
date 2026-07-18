@@ -133,3 +133,6 @@ Reflecting on the manual database setup instructions using PgAdmin, we should ai
 ### Log Entry: 2026-07-17
 Reflecting on the initial setup process, requiring manual PostgreSQL configuration can be a friction point for new developers trying to run the app locally. To streamline onboarding, I have implemented a fallback to a local SQLite database in the Django settings file if the PostgreSQL connection is not configured. I have also added a custom Django management command to automatically seed the database with the core symptom dataset from the Kaggle source, eliminating the need for manual data imports after running migrations.
 
+### Log Entry: 2026-07-18
+Proposed the addition of a Docker Compose configuration to automate the setup of the PostgreSQL database and Django web server. This will eliminate the manual steps of installing pgAdmin and manually creating the 'predico' database, streamline local development, and ensure consistent dependency management.
+
