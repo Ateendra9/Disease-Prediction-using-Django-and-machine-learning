@@ -136,3 +136,6 @@ Reflecting on the initial setup process, requiring manual PostgreSQL configurati
 ### Log Entry: 2026-07-18
 Proposed the addition of a Docker Compose configuration to automate the setup of the PostgreSQL database and Django web server. This will eliminate the manual steps of installing pgAdmin and manually creating the 'predico' database, streamline local development, and ensure consistent dependency management.
 
+### Log Entry: 2026-07-19
+To simplify the manual database setup and dependency installation process, we should consider containerizing the entire Django and PostgreSQL environment using Docker and Docker Compose. Currently, users are required to install PostgreSQL and pgAdmin manually, create the 'predico' database, and manage python virtual environments. By providing a multi-container Docker configuration, new contributors can spin up the Django web application and a pre-configured PostgreSQL instance with a single command, ensuring a consistent development environment across different operating systems.
+
