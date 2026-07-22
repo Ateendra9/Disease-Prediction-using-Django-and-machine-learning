@@ -142,3 +142,6 @@ To simplify the manual database setup and dependency installation process, we sh
 ### Log Entry: 2026-07-21
 To streamline the initial onboarding process and reduce manual configuration errors, we are planning to implement a database initialization script that automates the creation of the PostgreSQL 'predico' database. Currently, developers must manually create this database instance using PgAdmin before running migrations. By providing an automated setup command or integrating db-creation checks inside the Django configuration, we can make the local development setup much faster and less prone to user error.
 
+### Log Entry: 2026-07-22
+Today we focused on streamlining the local development setup for the disease prediction webapp. Since the current installation instructions require manual database creation on PostgreSQL via PgAdmin, a logical next step is containerizing the Django application and the 'predico' PostgreSQL database using Docker and Docker Compose. This integration will automate the database provisioning, manage environmental variables more securely, and allow future contributors to boot up the entire machine learning application and database with a single command.
+
