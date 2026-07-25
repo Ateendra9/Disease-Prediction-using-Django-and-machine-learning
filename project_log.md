@@ -148,3 +148,6 @@ Today we focused on streamlining the local development setup for the disease pre
 ### Log Entry: 2026-07-23
 To streamline the setup process and eliminate manual database creation steps in PostgreSQL, we should containerize the application. Introducing a Dockerfile and a docker-compose.yml file will allow us to spin up both the Django web application and a pre-configured PostgreSQL instance named 'predico' with a single command. This avoids manual virtual environment configuration and pgAdmin setup, drastically improving the onboarding experience for new contributors and developers.
 
+### Log Entry: 2026-07-25
+To improve the developer onboarding experience and simplify local testing, we propose implementing a fallback database configuration in settings.py that defaults to SQLite if the PostgreSQL 'predico' database is not configured or reachable. This addresses the manual setup barrier currently required by PostgreSQL and PgAdmin. Furthermore, we plan to containerize the application using Docker and Docker Compose to automate the orchestration of both the Django web application and the PostgreSQL database, providing a consistent environment for disease prediction model inference.
+
