@@ -151,3 +151,6 @@ To streamline the setup process and eliminate manual database creation steps in 
 ### Log Entry: 2026-07-25
 To improve the developer onboarding experience and simplify local testing, we propose implementing a fallback database configuration in settings.py that defaults to SQLite if the PostgreSQL 'predico' database is not configured or reachable. This addresses the manual setup barrier currently required by PostgreSQL and PgAdmin. Furthermore, we plan to containerize the application using Docker and Docker Compose to automate the orchestration of both the Django web application and the PostgreSQL database, providing a consistent environment for disease prediction model inference.
 
+### Log Entry: 2026-07-28
+To streamline the initial setup process for new developers, we are planning to introduce a Docker Compose configuration that automates the provisioning of the PostgreSQL database ('predico') and sets up the required Django environment variables. Currently, the setup requires manual DB creation via PgAdmin, which can be prone to user error. Automating this step alongside seed data generation for the machine learning model will lower the barrier to entry and ensure a consistent local development environment.
+
