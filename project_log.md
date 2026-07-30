@@ -157,3 +157,6 @@ To streamline the initial setup process for new developers, we are planning to i
 ### Log Entry: 2026-07-29
 Automated check-in.
 
+### Log Entry: 2026-07-30
+Today's focus was on streamlining the local environment setup for developers. Currently, the project requires manual PostgreSQL database creation via PgAdmin. To simplify onboarding, we propose integrating a Docker Compose configuration. This will automate the provisioning of the PostgreSQL service, pre-configure the 'predico' database, and manage environment variables seamlessly, allowing new contributors to run the disease prediction web application with a single command.
+
