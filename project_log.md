@@ -160,3 +160,6 @@ Automated check-in.
 ### Log Entry: 2026-07-30
 Today's focus was on streamlining the local environment setup for developers. Currently, the project requires manual PostgreSQL database creation via PgAdmin. To simplify onboarding, we propose integrating a Docker Compose configuration. This will automate the provisioning of the PostgreSQL service, pre-configure the 'predico' database, and manage environment variables seamlessly, allowing new contributors to run the disease prediction web application with a single command.
 
+### Log Entry: 2026-07-31
+To improve user experience and reduce invalid input errors, we plan to implement a dynamic symptom autocomplete feature on the frontend. Currently, users must manually input symptoms, which can lead to mismatches with the exact feature names expected by the underlying machine learning model trained on the Kaggle dataset. By integrating a responsive dropdown list generated directly from the model's feature column names, we can ensure consistent symptom mapping and significantly improve prediction accuracy.
+
