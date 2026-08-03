@@ -163,3 +163,6 @@ Today's focus was on streamlining the local environment setup for developers. Cu
 ### Log Entry: 2026-07-31
 To improve user experience and reduce invalid input errors, we plan to implement a dynamic symptom autocomplete feature on the frontend. Currently, users must manually input symptoms, which can lead to mismatches with the exact feature names expected by the underlying machine learning model trained on the Kaggle dataset. By integrating a responsive dropdown list generated directly from the model's feature column names, we can ensure consistent symptom mapping and significantly improve prediction accuracy.
 
+### Log Entry: 2026-08-03
+Today's focus was on enhancing the local development experience and model inference speed. We refactored the database configuration to fall back to SQLite if PostgreSQL isn't detected, lowering the barrier for new contributors. Additionally, we optimized the disease prediction model loading mechanism inside the Django application by pre-loading the trained scikit-learn model and label encoders into memory during server startup using a custom AppConfig, reducing request latency for symptom-based predictions.
+
