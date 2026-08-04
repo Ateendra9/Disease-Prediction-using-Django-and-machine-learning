@@ -166,3 +166,6 @@ To improve user experience and reduce invalid input errors, we plan to implement
 ### Log Entry: 2026-08-03
 Today's focus was on enhancing the local development experience and model inference speed. We refactored the database configuration to fall back to SQLite if PostgreSQL isn't detected, lowering the barrier for new contributors. Additionally, we optimized the disease prediction model loading mechanism inside the Django application by pre-loading the trained scikit-learn model and label encoders into memory during server startup using a custom AppConfig, reducing request latency for symptom-based predictions.
 
+### Log Entry: 2026-08-04
+To streamline the initial setup process for new developers, we are planning to introduce a custom Django management command that automatically seeds the PostgreSQL database with symptom and disease metadata parsed directly from the Kaggle dataset. Currently, setting up the 'predico' database requires manual verification of the schema. Automating this data ingestion step right after running migrations will ensure that the frontend dropdowns and machine learning model configurations are instantly populated with consistent lookup values, minimizing manual SQL imports and improving the local onboarding experience.
+
