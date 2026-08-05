@@ -169,3 +169,6 @@ Today's focus was on enhancing the local development experience and model infere
 ### Log Entry: 2026-08-04
 To streamline the initial setup process for new developers, we are planning to introduce a custom Django management command that automatically seeds the PostgreSQL database with symptom and disease metadata parsed directly from the Kaggle dataset. Currently, setting up the 'predico' database requires manual verification of the schema. Automating this data ingestion step right after running migrations will ensure that the frontend dropdowns and machine learning model configurations are instantly populated with consistent lookup values, minimizing manual SQL imports and improving the local onboarding experience.
 
+### Log Entry: 2026-08-05
+In order to optimize performance and reduce request latency, we are planning to refactor how the machine learning model is loaded into memory. Currently, the trained model is being re-read from disk on every prediction request. By moving the model loading logic to Django's AppConfig ready() method, we can load the pickle/joblib file once during application startup and cache it, significantly improving response times for symptom-based disease predictions.
+
