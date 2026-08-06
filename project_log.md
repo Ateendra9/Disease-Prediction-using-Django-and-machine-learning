@@ -172,3 +172,6 @@ To streamline the initial setup process for new developers, we are planning to i
 ### Log Entry: 2026-08-05
 In order to optimize performance and reduce request latency, we are planning to refactor how the machine learning model is loaded into memory. Currently, the trained model is being re-read from disk on every prediction request. By moving the model loading logic to Django's AppConfig ready() method, we can load the pickle/joblib file once during application startup and cache it, significantly improving response times for symptom-based disease predictions.
 
+### Log Entry: 2026-08-06
+To lower the barrier to entry for new developers and contributors, we have updated the Django settings configuration to support an automatic fallback to an SQLite database when the primary PostgreSQL 'predico' database is not configured or accessible. This enables immediate local testing of the machine learning prediction pipeline without requiring the manual installation of PostgreSQL and pgAdmin first, while preserving PostgreSQL as the recommended database for production deployments.
+
