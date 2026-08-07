@@ -175,3 +175,6 @@ In order to optimize performance and reduce request latency, we are planning to 
 ### Log Entry: 2026-08-06
 To lower the barrier to entry for new developers and contributors, we have updated the Django settings configuration to support an automatic fallback to an SQLite database when the primary PostgreSQL 'predico' database is not configured or accessible. This enables immediate local testing of the machine learning prediction pipeline without requiring the manual installation of PostgreSQL and pgAdmin first, while preserving PostgreSQL as the recommended database for production deployments.
 
+### Log Entry: 2026-08-07
+To streamline the initial setup process described in the README, which currently requires manual creation of a PostgreSQL database named 'predico' using PgAdmin, we propose introducing a Docker Compose configuration. This will bundle the Django application with a pre-configured PostgreSQL service, allowing developers to spin up the entire disease prediction platform, database migrations, and web server with a single command.
+
