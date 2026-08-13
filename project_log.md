@@ -184,3 +184,6 @@ To streamline the local development environment and eliminate the manual Postgre
 ### Log Entry: 2026-08-12
 Automated check-in.
 
+### Log Entry: 2026-08-13
+Today's update focuses on streamlining the initial database setup by implementing a custom Django management command to seed the PostgreSQL 'predico' database with the symptom and disease datasets. Currently, developers have to manually configure migrations and ensure the schema is populated; automating the ingestion of the Kaggle dataset CSVs directly into our Django models reduces setup friction, prevents empty database errors on the initial application run, and ensures the prediction views have immediate access to symptom lookup tables.
+
