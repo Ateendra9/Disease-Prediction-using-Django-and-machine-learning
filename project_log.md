@@ -193,3 +193,6 @@ To streamline the onboarding process and eliminate the manual database creation 
 ### Log Entry: 2026-08-16
 To improve the developer onboarding experience and eliminate the manual step of creating the 'predico' database in pgAdmin, we plan to containerize the Django application and PostgreSQL database using Docker and docker-compose. This will automate database initialization, streamline the local development environment, and handle dependency management more reliably.
 
+### Log Entry: 2026-08-19
+In today's update, we focused on optimizing the ML model loading routine within the Django backend. Previously, the serialized machine learning model was being reloaded from disk on every prediction request, which introduced unnecessary latency. We have implemented a caching mechanism to keep the trained Random Forest classifier in memory, significantly reducing prediction response times. Additionally, we added robust input validation to ensure the symptoms submitted by the user strictly match the feature set expected by the model, preventing potential runtime crashes during inference.
+
