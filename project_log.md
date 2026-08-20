@@ -196,3 +196,6 @@ To improve the developer onboarding experience and eliminate the manual step of 
 ### Log Entry: 2026-08-19
 In today's update, we focused on optimizing the ML model loading routine within the Django backend. Previously, the serialized machine learning model was being reloaded from disk on every prediction request, which introduced unnecessary latency. We have implemented a caching mechanism to keep the trained Random Forest classifier in memory, significantly reducing prediction response times. Additionally, we added robust input validation to ensure the symptoms submitted by the user strictly match the feature set expected by the model, preventing potential runtime crashes during inference.
 
+### Log Entry: 2026-08-20
+To streamline the local setup and eliminate the need for manual PostgreSQL database creation via PgAdmin, we should introduce Docker containerization to the project. By adding a Dockerfile and a docker-compose.yml file, we can orchestrate both the Django web application and a pre-configured PostgreSQL database ('predico') seamlessly. This will allow new contributors and users to spin up the entire application, database migrations, and web server with a single command, significantly improving the onboarding experience and overall developer workflow.
+
