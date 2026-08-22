@@ -202,3 +202,6 @@ To streamline the local setup and eliminate the need for manual PostgreSQL datab
 ### Log Entry: 2026-08-21
 To streamline the onboarding process and reduce setup friction, we should containerize the entire application using Docker and Docker Compose. Currently, users must manually install PostgreSQL, create a 'predico' database via PgAdmin, and manage their local Python environments. By introducing a Dockerfile and a docker-compose.yml file, we can define a multi-container setup that automatically provisions the PostgreSQL database, applies migrations, and starts the Django development server with a single command, making the disease prediction web app much easier to deploy and test locally.
 
+### Log Entry: 2026-08-22
+To simplify the onboarding process and eliminate the manual setup of PostgreSQL and PgAdmin, we propose introducing a Docker Compose configuration. This will automate the creation of the 'predico' database instance, handle environment variables securely, and streamline the database migration and local server spin-up processes into a single command. Dockerization will make the application platform-independent and significantly reduce setup friction for new developers trying out the machine learning-powered disease prediction system.
+
