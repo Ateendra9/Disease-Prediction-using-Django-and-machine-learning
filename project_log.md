@@ -208,3 +208,6 @@ To simplify the onboarding process and eliminate the manual setup of PostgreSQL 
 ### Log Entry: 2026-08-23
 To improve the onboarding experience and eliminate manual database setup steps in PostgreSQL and pgAdmin, we plan to containerize the application using Docker and Docker Compose. This update will define a multi-container setup with a Django web service and a pre-configured PostgreSQL database named 'predico', allowing developers to spin up the entire local environment with a single command. Additionally, we will resolve the broken image links in the README to ensure screenshots render correctly.
 
+### Log Entry: 2026-08-24
+To streamline the onboarding process and eliminate the need for manual PostgreSQL database creation via pgAdmin, we are planning to introduce a Dockerized environment. By configuring a docker-compose setup, we can automate the creation of the 'predico' database instance, handle the initial Django migrations, and launch the local development server in a single command, greatly improving the developer experience.
+
