@@ -217,3 +217,6 @@ Reflecting on the initial setup requirements, requiring users to manually create
 ### Log Entry: 2026-08-26
 Automated check-in.
 
+### Log Entry: 2026-08-27
+To streamline the local setup process and eliminate the need for manual PostgreSQL database creation via pgAdmin, we plan to containerize the Django application and database using Docker Compose. This update will define a multi-container service that automatically spins up a PostgreSQL instance pre-configured with the 'predico' database, installs dependencies, and runs database migrations on startup. This lowers the barrier to entry for new developers and ensures a consistent environment across different systems.
+
