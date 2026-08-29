@@ -223,3 +223,6 @@ To streamline the local setup process and eliminate the need for manual PostgreS
 ### Log Entry: 2026-08-28
 To streamline the initial setup process and eliminate the manual requirement of creating the PostgreSQL database 'predico' via pgAdmin, we should introduce a Dockerized environment. By adding a Dockerfile and a docker-compose.yml file, we can orchestrate both the Django application container and a pre-configured PostgreSQL container. This will allow new contributors to spin up the entire application, including database migrations and seeds, with a single command, significantly lowering the barrier to entry and improving local development consistency.
 
+### Log Entry: 2026-08-29
+Refactored the Django settings to support an optional SQLite database fallback for rapid local development, reducing the initial setup friction associated with manual PostgreSQL configuration. Additionally, integrated pre-trained model serialization using joblib to optimize prediction response times and eliminate redundant training cycles on Django server startup.
+
