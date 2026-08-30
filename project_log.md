@@ -226,3 +226,6 @@ To streamline the initial setup process and eliminate the manual requirement of 
 ### Log Entry: 2026-08-29
 Refactored the Django settings to support an optional SQLite database fallback for rapid local development, reducing the initial setup friction associated with manual PostgreSQL configuration. Additionally, integrated pre-trained model serialization using joblib to optimize prediction response times and eliminate redundant training cycles on Django server startup.
 
+### Log Entry: 2026-08-30
+To streamline the initial setup process and eliminate the manual requirement of creating the 'predico' database in PostgreSQL via PgAdmin, we are planning to introduce Docker and Docker Compose support. By defining a docker-compose.yml file with pre-configured PostgreSQL and Django services, new contributors will be able to spin up the entire local development environment, including database migrations and symptom-prediction models, with a single command, significantly lowering the barrier to entry.
+
