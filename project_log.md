@@ -229,3 +229,6 @@ Refactored the Django settings to support an optional SQLite database fallback f
 ### Log Entry: 2026-08-30
 To streamline the initial setup process and eliminate the manual requirement of creating the 'predico' database in PostgreSQL via PgAdmin, we are planning to introduce Docker and Docker Compose support. By defining a docker-compose.yml file with pre-configured PostgreSQL and Django services, new contributors will be able to spin up the entire local development environment, including database migrations and symptom-prediction models, with a single command, significantly lowering the barrier to entry.
 
+### Log Entry: 2026-08-31
+To streamline the initial setup process and reduce manual configuration errors, we plan to implement automatic database checks and setup routines or containerize the application using Docker Compose to orchestrate both the Django web server and the PostgreSQL database seamlessly. This will resolve the friction of users having to manually create the 'predico' database in PgAdmin prior to running migrations. Additionally, we will integrate a model validation step to ensure that the pre-trained machine learning model loads correctly from the serialized state before the server starts accepting symptom inputs.
+
