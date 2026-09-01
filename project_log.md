@@ -232,3 +232,6 @@ To streamline the initial setup process and eliminate the manual requirement of 
 ### Log Entry: 2026-08-31
 To streamline the initial setup process and reduce manual configuration errors, we plan to implement automatic database checks and setup routines or containerize the application using Docker Compose to orchestrate both the Django web server and the PostgreSQL database seamlessly. This will resolve the friction of users having to manually create the 'predico' database in PgAdmin prior to running migrations. Additionally, we will integrate a model validation step to ensure that the pre-trained machine learning model loads correctly from the serialized state before the server starts accepting symptom inputs.
 
+### Log Entry: 2026-09-01
+To improve the response time of the symptom-based disease prediction, we plan to optimize the machine learning model loading mechanism. Currently, loading the trained model on every request introduces unnecessary latency. By utilizing Django's AppConfig to load the joblib-serialized model once during the application startup, we can significantly reduce API response times and improve overall user experience. Additionally, we will add fallback error handling in case the 'predico' PostgreSQL database instance is temporarily unreachable during startup migrations.
+
