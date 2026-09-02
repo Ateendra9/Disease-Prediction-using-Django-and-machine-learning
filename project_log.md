@@ -235,3 +235,6 @@ To streamline the initial setup process and reduce manual configuration errors, 
 ### Log Entry: 2026-09-01
 To improve the response time of the symptom-based disease prediction, we plan to optimize the machine learning model loading mechanism. Currently, loading the trained model on every request introduces unnecessary latency. By utilizing Django's AppConfig to load the joblib-serialized model once during the application startup, we can significantly reduce API response times and improve overall user experience. Additionally, we will add fallback error handling in case the 'predico' PostgreSQL database instance is temporarily unreachable during startup migrations.
 
+### Log Entry: 2026-09-02
+To streamline the initial onboarding process and reduce manual database setup errors, we are planning to integrate a database health-check or automation script that verifies the existence of the 'predico' PostgreSQL database on startup. Additionally, containerizing the application with Docker and docker-compose would allow users to spin up both the Django web application and the pre-configured PostgreSQL database instance with a single command, eliminating the need for manual configuration via PgAdmin.
+
