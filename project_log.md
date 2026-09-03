@@ -238,3 +238,6 @@ To improve the response time of the symptom-based disease prediction, we plan to
 ### Log Entry: 2026-09-02
 To streamline the initial onboarding process and reduce manual database setup errors, we are planning to integrate a database health-check or automation script that verifies the existence of the 'predico' PostgreSQL database on startup. Additionally, containerizing the application with Docker and docker-compose would allow users to spin up both the Django web application and the pre-configured PostgreSQL database instance with a single command, eliminating the need for manual configuration via PgAdmin.
 
+### Log Entry: 2026-09-03
+To streamline the deployment and local development setup of the disease prediction platform, we have added Docker and Docker Compose configuration. This eliminates the manual step of installing PostgreSQL and pgAdmin and creating the 'predico' database manually. The new docker-compose.yml orchestrates both the Django application and a pre-configured PostgreSQL service with environment-driven credentials, facilitating a seamless launch experience.
+
