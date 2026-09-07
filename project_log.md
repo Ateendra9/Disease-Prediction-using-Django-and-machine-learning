@@ -247,3 +247,6 @@ Automated check-in.
 ### Log Entry: 2026-09-06
 To streamline the initial setup process outlined in the README, we are developing a custom Django management command to seed the PostgreSQL 'predico' database with the symptoms and disease datasets automatically. This eliminates the need for manual data imports or table creation steps beyond running migrations, allowing developers to get the web application up and running even faster. Future updates will integrate this seeding command directly into the setup workflow and add basic unit tests for the ML prediction endpoint.
 
+### Log Entry: 2026-09-07
+To streamline the initial onboarding and setup process for developers, we should consider containerizing the entire application using Docker and Docker Compose. Currently, users must manually configure PostgreSQL and create the 'predico' database via pgAdmin before running migrations. By introducing a docker-compose.yml file with pre-configured Django and PostgreSQL services, we can automate database provisioning and dependency installation, enabling a single-command startup and significantly improving the local development experience.
+
