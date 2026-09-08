@@ -250,3 +250,6 @@ To streamline the initial setup process outlined in the README, we are developin
 ### Log Entry: 2026-09-07
 To streamline the initial onboarding and setup process for developers, we should consider containerizing the entire application using Docker and Docker Compose. Currently, users must manually configure PostgreSQL and create the 'predico' database via pgAdmin before running migrations. By introducing a docker-compose.yml file with pre-configured Django and PostgreSQL services, we can automate database provisioning and dependency installation, enabling a single-command startup and significantly improving the local development experience.
 
+### Log Entry: 2026-09-08
+To enhance the deployment experience and make the initial setup more robust, we plan to transition the hardcoded PostgreSQL database configuration in settings.py to environment variables using django-environ. Additionally, providing a fallback SQLite configuration for local development will significantly reduce the friction for new contributors who may not have PostgreSQL or pgAdmin pre-installed, allowing them to test the machine learning prediction models immediately.
+
