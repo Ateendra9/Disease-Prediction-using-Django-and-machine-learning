@@ -253,3 +253,6 @@ To streamline the initial onboarding and setup process for developers, we should
 ### Log Entry: 2026-09-08
 To enhance the deployment experience and make the initial setup more robust, we plan to transition the hardcoded PostgreSQL database configuration in settings.py to environment variables using django-environ. Additionally, providing a fallback SQLite configuration for local development will significantly reduce the friction for new contributors who may not have PostgreSQL or pgAdmin pre-installed, allowing them to test the machine learning prediction models immediately.
 
+### Log Entry: 2026-09-09
+To streamline the onboarding process and eliminate manual PostgreSQL database creation steps, we should consider containerizing the entire Django and ML prediction application using Docker and Docker Compose. This would automatically spin up the PostgreSQL database instance named 'predico', apply migrations, and host the web application without requiring users to manually configure pgAdmin. This containerization will improve environment consistency and make it easier for contributors to run the disease prediction system locally.
+
