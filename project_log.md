@@ -277,3 +277,6 @@ To simplify the onboarding process and remove the manual PostgreSQL database cre
 ### Log Entry: 2026-09-16
 Automated check-in.
 
+### Log Entry: 2026-09-17
+To improve the security and portability of the application, we plan to refactor the database configuration in settings.py. Currently, PostgreSQL credentials and DB names are hardcoded, which can lead to security risks and deployment difficulties. By integrating django-environ, we can externalize sensitive settings like SECRET_KEY, DB_NAME, DB_USER, and DB_PASSWORD into a .env template. This will simplify the initial setup process outlined in the README and allow seamless transitions between local PostgreSQL development and production environments.
+
