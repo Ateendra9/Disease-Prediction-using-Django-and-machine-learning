@@ -280,3 +280,6 @@ Automated check-in.
 ### Log Entry: 2026-09-17
 To improve the security and portability of the application, we plan to refactor the database configuration in settings.py. Currently, PostgreSQL credentials and DB names are hardcoded, which can lead to security risks and deployment difficulties. By integrating django-environ, we can externalize sensitive settings like SECRET_KEY, DB_NAME, DB_USER, and DB_PASSWORD into a .env template. This will simplify the initial setup process outlined in the README and allow seamless transitions between local PostgreSQL development and production environments.
 
+### Log Entry: 2026-09-18
+Today's focus was on enhancing the user experience during symptom selection. Currently, the application relies on manual symptom inputs which can lead to mismatches with the dataset's expected feature names. To address this, we plan to implement an autocomplete or multi-select dropdown menu in the Django templates, populated dynamically from the Kaggle dataset's symptom columns. This will ensure users select valid symptoms, reducing prediction errors caused by typos or formatting discrepancies, and streamlining the overall interaction with the machine learning model.
+
