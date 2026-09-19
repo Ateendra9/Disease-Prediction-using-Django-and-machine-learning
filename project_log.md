@@ -283,3 +283,6 @@ To improve the security and portability of the application, we plan to refactor 
 ### Log Entry: 2026-09-18
 Today's focus was on enhancing the user experience during symptom selection. Currently, the application relies on manual symptom inputs which can lead to mismatches with the dataset's expected feature names. To address this, we plan to implement an autocomplete or multi-select dropdown menu in the Django templates, populated dynamically from the Kaggle dataset's symptom columns. This will ensure users select valid symptoms, reducing prediction errors caused by typos or formatting discrepancies, and streamlining the overall interaction with the machine learning model.
 
+### Log Entry: 2026-09-19
+Today's efforts were focused on streamlining the local development setup. Currently, users must manually configure PostgreSQL and create the 'predico' database using PgAdmin before running the Django migrations. To eliminate this friction, we propose containerizing the application using Docker and Docker Compose. This will package the Django application and the PostgreSQL database into a single, cohesive environment that can be spun up instantly, making it much easier for developers and users to run the disease prediction system locally without manual database configuration.
+
