@@ -286,3 +286,6 @@ Today's focus was on enhancing the user experience during symptom selection. Cur
 ### Log Entry: 2026-09-19
 Today's efforts were focused on streamlining the local development setup. Currently, users must manually configure PostgreSQL and create the 'predico' database using PgAdmin before running the Django migrations. To eliminate this friction, we propose containerizing the application using Docker and Docker Compose. This will package the Django application and the PostgreSQL database into a single, cohesive environment that can be spun up instantly, making it much easier for developers and users to run the disease prediction system locally without manual database configuration.
 
+### Log Entry: 2026-09-20
+Reflecting on the setup steps required for the 'predico' database, manually configuring PostgreSQL and pgAdmin can be a barrier for new contributors. To address this, we propose introducing a Docker Compose configuration that automatically provisions the PostgreSQL database alongside the Django container, streamlining the migration and local development workflow. This will eliminate manual database creation steps and guarantee a consistent development environment across different systems.
+
