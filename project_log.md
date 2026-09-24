@@ -298,3 +298,6 @@ Automated check-in.
 ### Log Entry: 2026-09-23
 Automated check-in.
 
+### Log Entry: 2026-09-24
+Reflecting on the setup process for the Disease Prediction webapp, requiring manual PostgreSQL installation and database creation ('predico') via PgAdmin can be a friction point for new users. To streamline this onboarding experience, we plan to containerize the entire application using Docker and Docker Compose. By defining a multi-container setup with a Django web service and a PostgreSQL database service, users can spin up the entire application and its dependencies with a single command, automatically handling database initialization and migrations.
+
