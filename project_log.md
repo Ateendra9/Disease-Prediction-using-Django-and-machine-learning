@@ -325,3 +325,6 @@ Automated check-in.
 ### Log Entry: 2026-10-02
 Automated check-in.
 
+### Log Entry: 2026-10-03
+To streamline the initial local setup process for new developers, we are planning to introduce a fallback to SQLite if the PostgreSQL 'predico' database is not active. Additionally, we will implement a custom Django management command to seed symptom and disease mapping data directly into the database, resolving setup bottlenecks and ensuring immediate usability upon running migrations.
+
