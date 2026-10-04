@@ -328,3 +328,6 @@ Automated check-in.
 ### Log Entry: 2026-10-03
 To streamline the initial local setup process for new developers, we are planning to introduce a fallback to SQLite if the PostgreSQL 'predico' database is not active. Additionally, we will implement a custom Django management command to seed symptom and disease mapping data directly into the database, resolving setup bottlenecks and ensuring immediate usability upon running migrations.
 
+### Log Entry: 2026-10-04
+To simplify the onboarding process and eliminate manual database creation steps via PgAdmin, I am planning to introduce a Docker Compose setup. By containerizing both the Django application and the PostgreSQL database, pre-configured with the 'predico' database instance, developers will be able to launch the entire disease prediction system with a single command. This containerization will also resolve potential environment mismatch issues and ensure smoother dependency resolution for the machine learning libraries.
+
