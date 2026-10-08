@@ -340,3 +340,6 @@ To streamline the onboarding process and eliminate the manual step of creating t
 ### Log Entry: 2026-10-07
 Automated check-in.
 
+### Log Entry: 2026-10-08
+To simplify the manual database setup steps described in the README, we should containerize the application using Docker and Docker Compose. This will orchestrate both the Django web service and the PostgreSQL database automatically, removing the prerequisite for users to manually install PgAdmin and configure the database instance locally. Additionally, this allows us to securely manage database credentials using environment variables instead of hardcoded values.
+
