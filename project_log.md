@@ -343,3 +343,6 @@ Automated check-in.
 ### Log Entry: 2026-10-08
 To simplify the manual database setup steps described in the README, we should containerize the application using Docker and Docker Compose. This will orchestrate both the Django web service and the PostgreSQL database automatically, removing the prerequisite for users to manually install PgAdmin and configure the database instance locally. Additionally, this allows us to securely manage database credentials using environment variables instead of hardcoded values.
 
+### Log Entry: 2026-10-09
+To streamline the onboarding process and eliminate the manual setup of PostgreSQL and pgAdmin mentioned in the documentation, we should introduce a Docker Compose configuration. By containerizing the Django application alongside a PostgreSQL database pre-configured with the 'predico' database instance, we can reduce the setup steps to a single command. This will make the machine learning-based disease prediction web application much more accessible for new contributors and users running it locally.
+
