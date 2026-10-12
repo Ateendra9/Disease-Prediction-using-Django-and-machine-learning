@@ -352,3 +352,6 @@ To streamline the onboarding process and eliminate manual database setup steps i
 ### Log Entry: 2026-10-11
 To streamline the local setup process and eliminate the manual creation of the PostgreSQL database via PgAdmin, I propose adding Docker and Docker Compose configuration. Containerizing the Django web application and PostgreSQL database will allow new developers to launch the entire environment with a single command, automating database initialization and migration steps.
 
+### Log Entry: 2026-10-12
+To streamline the initial development setup and eliminate the manual creation of the PostgreSQL predico database instance, we plan to introduce Docker containerization to the project. Adding a docker-compose configuration will automatically orchestrate both the Django web service and the PostgreSQL database container with pre-configured environment variables, making it significantly easier for new contributors to get the application running locally.
+
