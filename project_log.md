@@ -361,3 +361,6 @@ To simplify the onboarding process for new users, we should consider containeriz
 ### Log Entry: 2026-10-14
 Automated check-in.
 
+### Log Entry: 2026-10-15
+To enhance user experience and reliability in the web application, we should consider refactoring the machine learning backend to return confidence scores alongside top predicted conditions. Currently, the Django server interfaces with PostgreSQL to manage user inputs and predictions, but extending the model output to include probability percentages for differential diagnoses will provide users with clearer context regarding ambiguous symptom combinations.
+
