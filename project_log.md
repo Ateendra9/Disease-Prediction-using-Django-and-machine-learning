@@ -364,3 +364,6 @@ Automated check-in.
 ### Log Entry: 2026-10-15
 To enhance user experience and reliability in the web application, we should consider refactoring the machine learning backend to return confidence scores alongside top predicted conditions. Currently, the Django server interfaces with PostgreSQL to manage user inputs and predictions, but extending the model output to include probability percentages for differential diagnoses will provide users with clearer context regarding ambiguous symptom combinations.
 
+### Log Entry: 2026-10-16
+To streamline the local setup process and remove manual steps like creating the predico database in PgAdmin, we are considering adding a Docker configuration to containerize both the Django application and the PostgreSQL database. This will allow developers to spin up the full disease prediction web app with a single command while ensuring consistent environment configurations across different machines.
+
