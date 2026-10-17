@@ -367,3 +367,6 @@ To enhance user experience and reliability in the web application, we should con
 ### Log Entry: 2026-10-16
 To streamline the local setup process and remove manual steps like creating the predico database in PgAdmin, we are considering adding a Docker configuration to containerize both the Django application and the PostgreSQL database. This will allow developers to spin up the full disease prediction web app with a single command while ensuring consistent environment configurations across different machines.
 
+### Log Entry: 2026-10-17
+To streamline the setup process for new developers, I evaluated the manual PostgreSQL configuration steps outlined in the documentation. Requiring manual database creation via PgAdmin can lead to setup errors, so a beneficial next step would be implementing a custom Django management command or script to automatically initialize the 'predico' database and check connection health before running migrations.
+
