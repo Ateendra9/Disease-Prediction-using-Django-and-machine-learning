@@ -370,3 +370,6 @@ To streamline the local setup process and remove manual steps like creating the 
 ### Log Entry: 2026-10-17
 To streamline the setup process for new developers, I evaluated the manual PostgreSQL configuration steps outlined in the documentation. Requiring manual database creation via PgAdmin can lead to setup errors, so a beneficial next step would be implementing a custom Django management command or script to automatically initialize the 'predico' database and check connection health before running migrations.
 
+### Log Entry: 2026-10-18
+Today we reviewed the setup instructions and identified friction in the manual PostgreSQL database creation process. To streamline onboarding for developers and users, we are considering adding a Docker Compose configuration that orchestrates the Django web app and a pre-configured PostgreSQL instance named predico. This will eliminate manual PgAdmin steps, standardize the development environment, and reduce initial setup errors.
+
