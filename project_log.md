@@ -394,3 +394,6 @@ To simplify the onboarding process for new developers and users who currently ha
 ### Log Entry: 2026-10-25
 To streamline local development setup and remove manual database configuration steps like manually creating the 'predico' database instance in PostgreSQL, we plan to containerize the application using Docker Compose. This will orchestrate both the Django web service and the PostgreSQL database backend, allowing new users and contributors to run the disease prediction web app effortlessly with a single command.
 
+### Log Entry: 2026-10-26
+To improve the developer onboarding experience and eliminate manual database creation steps, I plan to containerize the Django application and PostgreSQL database using Docker Compose. Currently, users must manually install PgAdmin and create the predico database instance before running migrations. Adding a docker-compose setup will automate environment provisioning, streamline dependency management, and allow developers to launch the disease prediction web app with a single command.
+
