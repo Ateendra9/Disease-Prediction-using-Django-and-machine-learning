@@ -400,3 +400,6 @@ To improve the developer onboarding experience and eliminate manual database cre
 ### Log Entry: 2026-10-27
 Automated check-in.
 
+### Log Entry: 2026-10-28
+To streamline the initial onboarding process, we should refactor our Django database settings to use environment variables via django-environ. Currently, users need to manually configure PostgreSQL and ensure local credentials match the default settings. Adding dynamic environment variable support, along with a template configuration file, will make setting up the predico database much safer and more seamless across different deployment environments.
+
