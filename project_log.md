@@ -403,3 +403,6 @@ Automated check-in.
 ### Log Entry: 2026-10-28
 To streamline the initial onboarding process, we should refactor our Django database settings to use environment variables via django-environ. Currently, users need to manually configure PostgreSQL and ensure local credentials match the default settings. Adding dynamic environment variable support, along with a template configuration file, will make setting up the predico database much safer and more seamless across different deployment environments.
 
+### Log Entry: 2026-10-29
+To streamline local development and lower the barrier to entry, we should containerize the application using Docker and Docker Compose. Currently, users must manually configure a PostgreSQL database named 'predico' and set up pgAdmin before running migrations. Adding a docker-compose configuration containing both the Django web service and a PostgreSQL container will automate database provisioning and ensure environment consistency across different developer environments.
+
