@@ -406,3 +406,6 @@ To streamline the initial onboarding process, we should refactor our Django data
 ### Log Entry: 2026-10-29
 To streamline local development and lower the barrier to entry, we should containerize the application using Docker and Docker Compose. Currently, users must manually configure a PostgreSQL database named 'predico' and set up pgAdmin before running migrations. Adding a docker-compose configuration containing both the Django web service and a PostgreSQL container will automate database provisioning and ensure environment consistency across different developer environments.
 
+### Log Entry: 2026-10-30
+To streamline the onboarding process and eliminate manual database setup steps in PgAdmin, I plan to create a custom Django management command that automatically checks for and initializes the 'predico' PostgreSQL database if it does not exist. Additionally, updating the database settings in settings.py to pull credentials directly from environment variables will make deployment and local setup significantly smoother and safer for new contributors.
+
