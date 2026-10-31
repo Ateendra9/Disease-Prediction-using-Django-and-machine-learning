@@ -409,3 +409,6 @@ To streamline local development and lower the barrier to entry, we should contai
 ### Log Entry: 2026-10-30
 To streamline the onboarding process and eliminate manual database setup steps in PgAdmin, I plan to create a custom Django management command that automatically checks for and initializes the 'predico' PostgreSQL database if it does not exist. Additionally, updating the database settings in settings.py to pull credentials directly from environment variables will make deployment and local setup significantly smoother and safer for new contributors.
 
+### Log Entry: 2026-10-31
+To streamline the setup process outlined in the project instructions, we should consider containerizing the Django application and PostgreSQL database using Docker Compose. Currently, users must manually install PostgreSQL, configure pgAdmin, and create the 'predico' database instance before running Django migrations. Implementing a Docker configuration will automate the database creation and environment provisioning, allowing developers to spin up the entire application seamlessly with a single command.
+
