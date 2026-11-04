@@ -421,3 +421,6 @@ Setting up the local PostgreSQL database manually can introduce configuration fr
 ### Log Entry: 2026-11-03
 Automated check-in.
 
+### Log Entry: 2026-11-04
+To simplify the setup process for new developers and ensure consistent local environments, we should introduce a Docker Compose configuration that packages both the Django application and the PostgreSQL database service. This will eliminate the requirement for manual PgAdmin installation and database instance creation prior to running migrations, streamlining project onboarding.
+
