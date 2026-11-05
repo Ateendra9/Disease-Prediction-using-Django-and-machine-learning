@@ -424,3 +424,6 @@ Automated check-in.
 ### Log Entry: 2026-11-04
 To simplify the setup process for new developers and ensure consistent local environments, we should introduce a Docker Compose configuration that packages both the Django application and the PostgreSQL database service. This will eliminate the requirement for manual PgAdmin installation and database instance creation prior to running migrations, streamlining project onboarding.
 
+### Log Entry: 2026-11-05
+To simplify the local environment setup and remove the manual requirement for configuring PostgreSQL via PgAdmin, we should containerize the application using Docker and Docker Compose. This update will automate the database provisioning, environment setup, and migration tasks in a unified workflow, making it easier for new contributors to spin up the Django application and machine learning prediction service seamlessly.
+
