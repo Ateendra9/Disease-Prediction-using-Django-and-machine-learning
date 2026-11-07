@@ -430,3 +430,6 @@ To simplify the local environment setup and remove the manual requirement for co
 ### Log Entry: 2026-11-06
 To simplify the setup process for new developers and eliminate manual PostgreSQL database creation via pgAdmin, we should introduce a Docker Compose configuration that automatically provisions the PostgreSQL instance alongside the Django web application. Containerizing the project will also standardize the Python environment, ensuring consistent performance when running the machine learning model for symptom-based disease predictions across different environments.
 
+### Log Entry: 2026-11-07
+To streamline the setup process for new contributors and users, we should consider containerizing the Django application and PostgreSQL database using Docker Compose. Currently, users must manually configure a PostgreSQL instance named 'predico' via PgAdmin and configure a local Python environment. Introducing a docker-compose setup will automate the database initialization and dependency management, ensuring a consistent and isolated development environment across different operating systems with minimal manual configuration.
+
