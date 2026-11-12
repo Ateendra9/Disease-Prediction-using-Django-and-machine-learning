@@ -445,3 +445,6 @@ Automated check-in.
 ### Log Entry: 2026-11-11
 Automated check-in.
 
+### Log Entry: 2026-11-12
+To streamline the initial setup process for new developers and eliminate manual PostgreSQL database instantiation via pgAdmin, I propose adding a Docker Compose configuration that orchestrates both the PostgreSQL service and the Django application. This will simplify local setup down to a single command while ensuring consistent environment configurations across different operating systems.
+
