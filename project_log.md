@@ -448,3 +448,6 @@ Automated check-in.
 ### Log Entry: 2026-11-12
 To streamline the initial setup process for new developers and eliminate manual PostgreSQL database instantiation via pgAdmin, I propose adding a Docker Compose configuration that orchestrates both the PostgreSQL service and the Django application. This will simplify local setup down to a single command while ensuring consistent environment configurations across different operating systems.
 
+### Log Entry: 2026-11-13
+Setting up the PostgreSQL database manually via pgAdmin currently creates a friction point for new developers. To streamline the onboarding process and simplify local testing, we should containerize the application using Docker and Docker Compose. Adding a docker-compose.yml file that orchestrates both the Django web application and a pre-configured PostgreSQL service will automate database initialization, manage environment variables cleanly, and significantly simplify setup steps.
+
