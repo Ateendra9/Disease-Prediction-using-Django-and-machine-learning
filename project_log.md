@@ -451,3 +451,6 @@ To streamline the initial setup process for new developers and eliminate manual 
 ### Log Entry: 2026-11-13
 Setting up the PostgreSQL database manually via pgAdmin currently creates a friction point for new developers. To streamline the onboarding process and simplify local testing, we should containerize the application using Docker and Docker Compose. Adding a docker-compose.yml file that orchestrates both the Django web application and a pre-configured PostgreSQL service will automate database initialization, manage environment variables cleanly, and significantly simplify setup steps.
 
+### Log Entry: 2026-11-14
+To streamline the setup process for new developers and eliminate database configuration issues, we should introduce a Docker Compose workflow that automatically provisions the PostgreSQL instance named 'predico' alongside the Django application. Currently, users must manually install PgAdmin and configure the database locally before running migrations, which creates unnecessary friction during onboarding. Containerizing the application will standardize the environment, simplify execution to a single command, and lay the groundwork for potential continuous integration pipelines.
+
