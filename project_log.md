@@ -466,3 +466,6 @@ Automated check-in.
 ### Log Entry: 2026-11-18
 Automated check-in.
 
+### Log Entry: 2026-11-19
+To improve developer onboarding and environment flexibility, we should transition the hardcoded PostgreSQL database settings in Django's settings.py to environment variables using python-dotenv, allowing seamless fallback to SQLite for quick local development without requiring a manual PostgreSQL instance setup.
+
