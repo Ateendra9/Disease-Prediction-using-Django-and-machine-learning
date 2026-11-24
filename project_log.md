@@ -481,3 +481,6 @@ To streamline the setup process for new developers and eliminate manual PostgreS
 ### Log Entry: 2026-11-23
 Automated check-in.
 
+### Log Entry: 2026-11-24
+To simplify the local environment configuration and remove the manual PostgreSQL setup via PgAdmin, we are introducing a Docker Compose file to orchestrate both the Django app and PostgreSQL services. This will streamline the setup process, enabling developers to launch the app and run database migrations automatically with a single command.
+
