@@ -484,3 +484,6 @@ Automated check-in.
 ### Log Entry: 2026-11-24
 To simplify the local environment configuration and remove the manual PostgreSQL setup via PgAdmin, we are introducing a Docker Compose file to orchestrate both the Django app and PostgreSQL services. This will streamline the setup process, enabling developers to launch the app and run database migrations automatically with a single command.
 
+### Log Entry: 2026-11-25
+To simplify developer onboarding and eliminate OS-specific setup hurdles, I plan to containerize the Django application and PostgreSQL database using Docker and Docker Compose. Currently, setup requires manually installing PostgreSQL and creating the 'predico' database via PgAdmin. Introducing a docker-compose setup will automate the database instance creation and dependency installation, enabling contributors to launch the disease prediction web app with a single command.
+
