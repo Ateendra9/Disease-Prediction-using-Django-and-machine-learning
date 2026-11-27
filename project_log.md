@@ -490,3 +490,6 @@ To simplify developer onboarding and eliminate OS-specific setup hurdles, I plan
 ### Log Entry: 2026-11-26
 Automated check-in.
 
+### Log Entry: 2026-11-27
+To streamline the local setup process described in the documentation, I am planning to introduce a Docker and Docker Compose configuration. Currently, developers must manually install PostgreSQL, use pgAdmin to create the 'predico' database, and manage dependencies within a virtual environment. Containerizing the Django web application alongside a PostgreSQL service will automate database initialization and dependency management, making it significantly easier for users to launch the disease prediction web app with a single command.
+
